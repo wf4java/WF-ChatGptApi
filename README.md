@@ -21,7 +21,7 @@ String result2 = gpt.ask("Say hello in 10 languages", 512); // 512 tokens, model
 ㅤ
 ㅤ
 ㅤ
-### User proxy:
+### Using a proxy:
 ```java
 Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress("ip", port));
 ChatGpt gpt = new ChatGpt("api-key", proxy);
@@ -29,7 +29,7 @@ ChatGpt gpt = new ChatGpt("api-key", proxy);
 ㅤ
 ㅤ
 ㅤ
-### User ChatGPT stream (The answer comes in chunks):
+### Using a ChatGPT stream (The answer comes in chunks):
 ```java
 ChatGptStream gptStream = new ChatGptStream("api-key"); // You can specify a proxy
 

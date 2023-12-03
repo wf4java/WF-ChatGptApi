@@ -126,11 +126,11 @@ public class ChatGptStream {
         };
 
 
-        int code = client.sendAsync(request, responseInfo -> new StringSubscriber(responseStream))
+        int statusCode = client.sendAsync(request, responseInfo -> new StringSubscriber(responseStream))
                 .thenApply(HttpResponse::statusCode)
                 .get();
 
-        HttpExceptionUtils.getExceptionByStatusCode(code).ifPresent(stream::error);
+        HttpExceptionUtils.getExceptionByStatusCode(statusCode).ifPresent(stream::error);
     }
 
 
