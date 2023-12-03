@@ -1,7 +1,7 @@
 # WF-ChatGptApi:
 ## Maven:
 `Java(min): 17`
-```
+```xml
   <dependency>
     <groupId>io.github.wf4java</groupId>
     <artifactId>WF-ChatGptApi</artifactId>
