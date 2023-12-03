@@ -19,7 +19,7 @@ String result1 = gpt.ask("Say hello in 10 languages"); // 2048 tokens, model: GP
 String result2 = gpt.ask("Say hello in 10 languages", 512); // 512 tokens, model: GPT_3_5_TURBO_1106
 ```
 ㅤ
-ㅤ
+ㅤ 
 ㅤ
 ### Using a proxy:
 ```java
