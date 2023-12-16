@@ -36,6 +36,7 @@ public class ChatGptResponseDTO {
 
 
     @Data
+    @JsonIgnoreProperties(ignoreUnknown = true)
     public static class Choice {
         @JsonProperty(value = "index")
         private Integer index;
@@ -47,6 +48,7 @@ public class ChatGptResponseDTO {
 
 
     @Data
+    @JsonIgnoreProperties(ignoreUnknown = true)
     public static class Usage {
         @JsonProperty(value = "prompt_tokens")
         private Integer promptTokens;

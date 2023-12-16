@@ -39,6 +39,7 @@ public class ChatGptStreamResponseDTO {
 
 
     @Data
+    @JsonIgnoreProperties(ignoreUnknown = true)
     public static class Choice {
         @JsonProperty(value = "index")
         private Integer index;
